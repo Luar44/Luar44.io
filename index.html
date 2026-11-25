@@ -2,45 +2,126 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio en Construcción</title>
+    <title>::: MI PORTAFOLIO DE ARTE :::</title>
     <style>
-        /* Estilos generales para ocupar toda la pantalla y centrar el contenido */
+        /* Estilos básicos noventeros/dosmileros */
         body {
+            background-color: #000000;
+            color: #CCCCCC;
+            font-family: "Times New Roman", Times, serif;
             margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #222222; /* Gris oscuro */
-            color: #ffffff; /* Texto blanco para que resalte */
-            font-family: Arial, sans-serif;
+            padding: 20px;
         }
 
-        /* Estilos para el mensaje */
-        .container {
+        a {
+            color: #00FF00; /* Verde fosforescente clásico */
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #008800;
+        }
+
+        a:hover {
+            background-color: #00FF00;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        /* Estilo de botón con borde biselado antiguo */
+        .boton-retro {
+            display: inline-block;
+            background-color: #222222;
+            border: 3px outset #666666;
+            padding: 10px;
+            margin: 10px;
             text-align: center;
+            width: 160px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: bold;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+        .boton-retro:hover {
+            border: 3px inset #666666;
+            background-color: #111111;
+            color: #00FF00;
         }
 
-        p {
-            font-size: 1.2rem;
-            color: #aaaaaa; /* Gris más claro para el subtítulo */
+        .boton-retro img {
+            width: 140px;
+            height: 140px;
+            border: 1px solid #444444;
+            display: block;
+            margin: 0 auto 8px auto;
+            background-color: #000000;
+        }
+
+        .barra-superior {
+            border-bottom: 1px dashed #555555;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Hola sonrisitas kkkkkk :D</h1>
-        <p>ando poniendo en practica las 2 clases que fui al cucei qwue asco</p>
+    <!-- Barra superior con contacto -->
+    <div class="barra-superior" align="right">
+        [ <a href="mailto:tucorreo@ejemplo.com">CONTACTO</a> ] - [ <a href="contacto.html">LIBRO DE VISITAS / INFO</a> ]
     </div>
+
+    <!-- Título principal -->
+    <center>
+        <h1><font color="#FFFFFF">~ ARCHIVO DE OBRAS ~</font></h1>
+        <p><font size="2" face="Courier New">Selecciona una categoria para entrar</font></p>
+        <br>
+
+        <!-- Contenedor tipo tabla antigua para los botones -->
+        <table border="0" cellpadding="5" cellspacing="5">
+            <tr>
+                <td align="center">
+                    <a href="dibujo.html" class="boton-retro">
+                        <img src="img/dibujo.jpg" alt="[img_dibujo]">
+                        DIBUJO
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="pintura.html" class="boton-retro">
+                        <img src="img/pintura.jpg" alt="[img_pintura]">
+                        PINTURA
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="videoarte.html" class="boton-retro">
+                        <img src="img/videoarte.jpg" alt="[img_videoarte]">
+                        VIDEOARTE
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">
+                    <a href="musica.html" class="boton-retro">
+                        <img src="img/musica.jpg" alt="[img_musica]">
+                        MUSICA
+                    </a>
+                    <a href="mas.html" class="boton-retro">
+                        <img src="img/mas.jpg" alt="[img_mas]">
+                        MAS...
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <br><br><br>
+        <hr width="50%" color="#333333" size="1">
+        <font size="1" face="Courier New" color="#666666">
+            Ultima actualizacion: 2003 | Mejor visto en 800x600
+        </font>
+    </center>
 
 </body>
 </html>
